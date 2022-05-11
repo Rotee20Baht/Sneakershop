@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt',sans-serif;
+}
+
+header{
+    background-color: #fff;
+    color: black;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: sticky;
+}
+
+nav{
+    position: sticky;
+}
+
+header .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    place-items: center;
+}
+
+header .container .logo{
+    /* border: 1px solid red; */
+    font-size: 24px;
+}
+
+header .container .serch-box{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    grid-gap:0px;
+    /* flex-wrap: wrap; */
+}
+
+.container .serch-box input{
+    outline: none;
+    border: none;
+}
+
+.container .serch-box input[type=text]{
+    width: 780px;
+    max-height: 100%;
+    /* border: 1px solid lime; */
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: rgb(224, 224, 224);
+}
+
+.container .serch-box button{
+    width: 50px;
+    height: 100%;
+    font-size: 22px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(28 , 27, 27);
+    box-shadow: inset 0 0 0 0 #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.serch-box button:hover{
+    box-shadow: inset 60px 0 0 #fff;
+    border: 1px solid rgb(119, 119, 119);
+    color: rgb(28 , 27, 27);
+}
+
+header .container .action-list-box{
+    padding-left:20px;
+    /* padding-right:30px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.action-list-box .login-box{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-list-box .login-box:hover{
+    letter-spacing: 1px;
+}
+
+.login-box a{
+    color: black;
+    text-decoration: none;
+}
+
+.action-list-box .cart-box{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-list-box .cart-box:hover{
+    letter-spacing: 1px;
+}
+
+nav{
+    /* border: 1px solid pink; */
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    border-bottom: 0.5px solid rgb(211, 211, 211);
+    /* box-shadow: 0 15px 19px -1px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-contrainer{
+    width: 100%;
+    height: 9vh;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-contrainer ul{
+    display: flex;
+    list-style: none;
+    /* border: 1px solid orange; */
+    /* justify-content: center; */
+}
+
+.nav-contrainer ul li{
+    margin-left:20px;
+    margin-right:20px;
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
